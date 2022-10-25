@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+  class Main {
+
+  public static void main( String[] args) {
+    int ürünfiyati;
+    double kdvtutari;
+     double kdvliTutar;
+     double kdv18;
+     double kdv8;
+    
+
+     Scanner input= new Scanner(System.in ) ;
+    System.out.println("fiyat giriniz");
+    ürünfiyati = input.nextInt ();
+    
+    if   ( ürünfiyati < 1000 ){
+       kdvtutari=ürünfiyati*0.18;
+     System.out.println("Ürünün kdv tutarı " + kdvtutari);
+      kdvliTutar = (ürünfiyati +kdvtutari);
+              System.out.print("Ürünün KDV li fiyatı " + kdvliTutar);
+    }
+    
+     
+  
+    if (ürünfiyati>1000){
+       kdvtutari=ürünfiyati*0.08;
+  System.out.println("Ürünün kdv tutarı " + kdvtutari); 
+    kdvliTutar = (ürünfiyati +kdvtutari);
+              System.out.print("Ürünün KDV li fiyatı " + kdvliTutar);
+    }
+   
+  
+
+    }
+
+}
